@@ -1,0 +1,33 @@
+lemniscate_nn_tracker:
+  ros__parameters:
+    odom_topic: "/odemetry/filtered"
+    cmd_vel_topic: "/cmd_vel"
+    frame_id: "vicon/world"
+
+    # Supply both absolute paths as launch arguments; weights live in ../models.
+    model_path: ""
+    norm_stats_path: ""
+    device: "cpu"
+
+    control_rate_hz: 60.0
+    lookahead_time: 0.01666666666666
+    odom_timeout_sec: 0.25
+    odom_qos_reliable: true
+    publish_zero_before_first_odom: true
+
+    # If true, the lemniscate starts at the first received odometry position.
+    anchor_trajectory_to_first_odom: true
+    repeat_trajectory: true
+    eta: 1.0
+    alpha: 4.0
+    phase: 0.0
+    x_offset: 0.0
+    y_offset: 0.0
+
+    wheel_radius: 0.04445
+    wheelbase: 0.393
+    wheel_speed_limit: 10.0
+
+    # Optional extra command clamps. Set to 0.0 to disable.
+    max_linear_velocity: 0.0
+    max_angular_velocity: 0.0

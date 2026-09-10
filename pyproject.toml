@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uap-il"
+version = "0.1.0"
+description = "Imitation learning and UAP evaluation for a differential-drive robot."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=2.0",
+  "matplotlib",
+  "torch",
+  "pandas",
+  "scikit-learn",
+  "joblib",
+  "scipy",
+  "pillow",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+uap-il-workflow = "uap_il.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

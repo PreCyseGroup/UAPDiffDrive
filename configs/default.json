@@ -1,0 +1,32 @@
+{
+  "num_runs": 96,
+  "seed": 10,
+  "epochs": 200,
+  "batch_size": 1024,
+  "learning_rate": 0.0001,
+  "max_train_samples": 400000,
+  "max_val_samples": 80000,
+  "device": "auto",
+  "dataset_state_noise": {
+    "xy_std": 0.025, "theta_std": 0.08, "clip_sigma": 2.0,
+    "noisy_sample_fraction": 0.25, "dart_disturbed_rollout_fraction": 0.35,
+    "dart_wheel_noise_std": 0.25, "dart_action_clip_sigma": 2.0,
+    "initial_xy_min_distance": 0.05, "initial_xy_max_distance": 0.40,
+    "initial_theta_error": 0.25
+  },
+  "attack_epsilon": 0.25,
+  "attack_epsilons": [0.25],
+  "attack_method": "closed_loop_gradient",
+  "attack_strategies": {"ex_ey_theta": [1, 1, 1, 0, 0, 0, 0, 0]},
+  "attack_steps": 25,
+  "attack_batch_size": 2048,
+  "attack_population_size": 24,
+  "attack_horizon_steps": 900,
+  "attack_score_mode": "mean",
+  "gaussian_noise_stds": [0.1, 0.25],
+  "gaussian_noise_repeats": 5,
+  "robot": {"wheel_radius": 0.04445, "wheelbase": 0.393, "wheel_speed_limit": 10.0},
+  "simulation": {"dt": 0.016666666666666666, "horizon_scale": 1, "lookahead_time": 0.01666666666666},
+  "evaluation": {"repeats": 1, "initial_xy_error": 0.15, "initial_theta_error": 0.05},
+  "deluca_gains": {"kp1": 3.0, "kp2": 3.0, "kd1": 1.5, "kd2": 1.5}
+}
