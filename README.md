@@ -63,25 +63,6 @@ course. This setup lets us compare the nominal and adversarially trained
 controllers under the same physical trajectory-tracking conditions, both with
 and without UAP and FGSM observation attacks applied.
 
-## Abstract
-
-This paper investigates universal adversarial perturbation (UAP) attacks against
-behavioral-cloning (BC) controllers for mobile robot trajectory tracking. We
-consider a white-box inference-time attacker that computes a single bounded,
-input-agnostic perturbation offline through differentiable closed-loop rollouts
-and applies it unchanged to selected observation channels during deployment. The
-perturbation is optimized to maximize closed-loop trajectory-tracking error
-subject to an $L_\infty$ constraint. To improve robustness against
-observation-space attacks, we propose an adversarial training strategy that uses
-dual-stage Fast Gradient Sign Method (FGSM) training. The first stage augments
-the training set offline with masked FGSM perturbations generated at multiple
-perturbation levels, while the second stage generates masked FGSM perturbations
-online from the current policy during training. The proposed attack and defense
-are experimentally evaluated on the Quanser QBOT platform in a confined indoor
-trajectory-tracking scenario, showcasing the vulnerabilities of the BC
-controller to UAP attacks and the improved resilience achieved through
-adversarial training.
-
 ## What is included?
 
 - A behavior-cloning training pipeline and expert-data collection workflow.
