@@ -4,6 +4,10 @@
 
 **Code maintainer:** Suryaprakash Rajkumar
 
+## Experiment videos
+
+### ▶ [Watch the six robot experiments](https://precysegroup.github.io/UAPDiffDrive/)
+
 ## What are we trying to do?
 
 A mobile robot can learn to follow a reference path by imitating an expert
@@ -26,12 +30,6 @@ resilient. In particular, it provides tools to:
 The key questions are simple: **can one small, fixed perturbation consistently
 mislead a closed-loop robot controller, how does it compare with an online FGSM
 attack, and can adversarial training reduce their effects?**
-
-## Video demonstration
-
-> YouTube demonstration coming soon.
-
-<!-- Add the YouTube link here when it is available. -->
 
 ## Threat model
 
