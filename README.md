@@ -1,6 +1,6 @@
 # Universal Perturbation Attacks on Neural Network Controllers for Wheeled Mobile Robots
 
-**Authors:** Suryaprakash Rajkumar, Ehsan Eslami, Walter Lucia, and Amr Youssef
+**Authors:** [Suryaprakash Rajkumar](https://suryaprakashrajkumar.github.io/), Ehsan Eslami, Walter Lucia, and Amr Youssef
 
 **Code maintainer:** Suryaprakash Rajkumar
 
