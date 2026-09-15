@@ -55,6 +55,12 @@ h1 {
   text-underline-offset: 4px;
 }
 
+.speed-note {
+  margin: 10px 0 0;
+  color: rgba(211, 220, 223, 0.68);
+  font-size: 0.76rem;
+}
+
 main {
   padding-block: 48px 80px;
 }
