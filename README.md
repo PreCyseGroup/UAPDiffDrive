@@ -1,12 +1,7 @@
 # Universal Perturbation Attacks on Neural Network Controllers for Wheeled Mobile Robots
 
-**Authors:** [Suryaprakash Rajkumar](https://suryaprakashrajkumar.github.io/), Ehsan Eslami, Walter Lucia, and Amr Youssef
-
-**Code maintainer:** Suryaprakash Rajkumar
-
 ## Experiment videos
 
-### ▶ [Watch the six robot experiments](https://precysegroup.github.io/UAPDiffDrive/)
 
 ## What are we trying to do?
 
