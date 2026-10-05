@@ -2,6 +2,8 @@
 
 ## Experiment videos
 
+https://anonymous.4open.science/w/UAPDiffDrive-0C1F/
+
 The six experiment videos are available on the accompanying project website.
 
 ## What are we trying to do?
