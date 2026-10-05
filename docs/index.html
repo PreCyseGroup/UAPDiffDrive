@@ -14,7 +14,7 @@
     <header>
       <div class="shell">
         <h1>Universal Perturbation Attacks on Neural Network Controllers for Wheeled Mobile Robots</h1>
-        <p class="speed-note">Videos are shown at 2× speed.</p>
+        <p class="speed-note">Videos are shown at 2× speed. Select Play video to watch an experiment.</p>
       </div>
     </header>
 
@@ -26,7 +26,8 @@
             <h3>Nominal NN · No attack · Trajectory completed. No wall collision</h3>
             <div class="video-frame">
               <video
-                controls autoplay muted loop playsinline preload="metadata"
+                id="nominal-clean"
+                controls muted playsinline preload="metadata"
                 aria-label="Nominal clean experiment"
               >
                 <source src="videos/nominal-clean.mp4" type="video/mp4">
@@ -34,13 +35,18 @@
                 <a href="videos/nominal-clean.mp4">Download the experiment video</a>.
               </video>
             </div>
+            <div class="video-actions">
+              <button class="playback-toggle" type="button" aria-controls="nominal-clean" aria-pressed="false">Play video</button>
+              <a href="videos/nominal-clean.mp4" download>Download MP4</a>
+            </div>
           </article>
 
           <article>
             <h3>Nominal NN · UAP · Wall collision</h3>
             <div class="video-frame">
               <video
-                controls autoplay muted loop playsinline preload="metadata"
+                id="nominal-uap"
+                controls muted playsinline preload="metadata"
                 aria-label="Nominal controller under UAP attack"
               >
                 <source src="videos/nominal-uap.mp4" type="video/mp4">
@@ -48,19 +54,28 @@
                 <a href="videos/nominal-uap.mp4">Download the experiment video</a>.
               </video>
             </div>
+            <div class="video-actions">
+              <button class="playback-toggle" type="button" aria-controls="nominal-uap" aria-pressed="false">Play video</button>
+              <a href="videos/nominal-uap.mp4" download>Download MP4</a>
+            </div>
           </article>
 
           <article>
             <h3>Nominal NN · FGSM · Wall collision</h3>
             <div class="video-frame">
               <video
-                controls autoplay muted loop playsinline preload="metadata"
+                id="nominal-fgsm"
+                controls muted playsinline preload="metadata"
                 aria-label="Nominal controller under FGSM attack"
               >
                 <source src="videos/nominal-fgsm.mp4" type="video/mp4">
                 Your browser does not support embedded video.
                 <a href="videos/nominal-fgsm.mp4">Download the experiment video</a>.
               </video>
+            </div>
+            <div class="video-actions">
+              <button class="playback-toggle" type="button" aria-controls="nominal-fgsm" aria-pressed="false">Play video</button>
+              <a href="videos/nominal-fgsm.mp4" download>Download MP4</a>
             </div>
           </article>
         </div>
@@ -73,7 +88,8 @@
             <h3>Adversarially trained NN · No attack · Trajectory completed. No wall collision</h3>
             <div class="video-frame">
               <video
-                controls autoplay muted loop playsinline preload="metadata"
+                id="adversarial-clean"
+                controls muted playsinline preload="metadata"
                 aria-label="Adversarially trained controller clean experiment"
               >
                 <source src="videos/adversarial-clean.mp4" type="video/mp4">
@@ -81,13 +97,18 @@
                 <a href="videos/adversarial-clean.mp4">Download the experiment video</a>.
               </video>
             </div>
+            <div class="video-actions">
+              <button class="playback-toggle" type="button" aria-controls="adversarial-clean" aria-pressed="false">Play video</button>
+              <a href="videos/adversarial-clean.mp4" download>Download MP4</a>
+            </div>
           </article>
 
           <article>
             <h3>Adversarially trained NN · UAP · Trajectory completed. No wall collision</h3>
             <div class="video-frame">
               <video
-                controls autoplay muted loop playsinline preload="metadata"
+                id="adversarial-uap"
+                controls muted playsinline preload="metadata"
                 aria-label="Adversarially trained controller under UAP attack"
               >
                 <source src="videos/adversarial-uap.mp4" type="video/mp4">
@@ -95,13 +116,18 @@
                 <a href="videos/adversarial-uap.mp4">Download the experiment video</a>.
               </video>
             </div>
+            <div class="video-actions">
+              <button class="playback-toggle" type="button" aria-controls="adversarial-uap" aria-pressed="false">Play video</button>
+              <a href="videos/adversarial-uap.mp4" download>Download MP4</a>
+            </div>
           </article>
 
           <article>
             <h3>Adversarially trained NN · FGSM · Trajectory completed. No wall collision</h3>
             <div class="video-frame">
               <video
-                controls autoplay muted loop playsinline preload="metadata"
+                id="adversarial-fgsm"
+                controls muted playsinline preload="metadata"
                 aria-label="Adversarially trained controller under FGSM attack"
               >
                 <source src="videos/adversarial-fgsm.mp4" type="video/mp4">
@@ -109,10 +135,15 @@
                 <a href="videos/adversarial-fgsm.mp4">Download the experiment video</a>.
               </video>
             </div>
+            <div class="video-actions">
+              <button class="playback-toggle" type="button" aria-controls="adversarial-fgsm" aria-pressed="false">Play video</button>
+              <a href="videos/adversarial-fgsm.mp4" download>Download MP4</a>
+            </div>
           </article>
         </div>
       </section>
 
     </main>
+    <script src="players.js" defer></script>
   </body>
 </html>
