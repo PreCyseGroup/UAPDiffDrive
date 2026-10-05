@@ -8,13 +8,14 @@
       content="Experiment videos for universal perturbation attacks on neural-network mobile robot controllers."
     >
     <title>UAP Attacks on Neural Network Robot Controllers</title>
+    <link rel="stylesheet" href="vendor/plyr/plyr.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
       <div class="shell">
         <h1>Universal Perturbation Attacks on Neural Network Controllers for Wheeled Mobile Robots</h1>
-        <p class="speed-note">Videos are shown at 2× speed. Select Play video to watch an experiment.</p>
+        <p class="speed-note">Videos are shown at 2× speed. Press play to watch an experiment.</p>
       </div>
     </header>
 
@@ -36,7 +37,6 @@
               </video>
             </div>
             <div class="video-actions">
-              <button class="playback-toggle" type="button" aria-controls="nominal-clean" aria-pressed="false">Play video</button>
               <a href="videos/nominal-clean.mp4" download>Download MP4</a>
             </div>
           </article>
@@ -55,7 +55,6 @@
               </video>
             </div>
             <div class="video-actions">
-              <button class="playback-toggle" type="button" aria-controls="nominal-uap" aria-pressed="false">Play video</button>
               <a href="videos/nominal-uap.mp4" download>Download MP4</a>
             </div>
           </article>
@@ -74,7 +73,6 @@
               </video>
             </div>
             <div class="video-actions">
-              <button class="playback-toggle" type="button" aria-controls="nominal-fgsm" aria-pressed="false">Play video</button>
               <a href="videos/nominal-fgsm.mp4" download>Download MP4</a>
             </div>
           </article>
@@ -98,7 +96,6 @@
               </video>
             </div>
             <div class="video-actions">
-              <button class="playback-toggle" type="button" aria-controls="adversarial-clean" aria-pressed="false">Play video</button>
               <a href="videos/adversarial-clean.mp4" download>Download MP4</a>
             </div>
           </article>
@@ -117,7 +114,6 @@
               </video>
             </div>
             <div class="video-actions">
-              <button class="playback-toggle" type="button" aria-controls="adversarial-uap" aria-pressed="false">Play video</button>
               <a href="videos/adversarial-uap.mp4" download>Download MP4</a>
             </div>
           </article>
@@ -136,7 +132,6 @@
               </video>
             </div>
             <div class="video-actions">
-              <button class="playback-toggle" type="button" aria-controls="adversarial-fgsm" aria-pressed="false">Play video</button>
               <a href="videos/adversarial-fgsm.mp4" download>Download MP4</a>
             </div>
           </article>
@@ -144,6 +139,7 @@
       </section>
 
     </main>
+    <script src="vendor/plyr/plyr.min.js" defer></script>
     <script src="players.js" defer></script>
   </body>
 </html>
