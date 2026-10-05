@@ -36,25 +36,6 @@ h1 {
   letter-spacing: -0.03em;
 }
 
-.authors {
-  margin: 24px 0 0;
-  color: #d3dcdf;
-  font-size: 1.05rem;
-}
-
-.authors a {
-  color: inherit;
-  text-underline-offset: 3px;
-}
-
-.repo-link {
-  display: inline-block;
-  margin-top: 18px;
-  color: white;
-  font-weight: 700;
-  text-underline-offset: 4px;
-}
-
 .speed-note {
   margin: 10px 0 0;
   color: rgba(211, 220, 223, 0.68);
@@ -121,10 +102,6 @@ h3 {
 
   header {
     padding-block: 44px;
-  }
-
-  .authors {
-    font-size: 0.95rem;
   }
 
   main {
